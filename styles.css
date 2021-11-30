@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', serif;
+    color: rgb(54, 54, 54);
+}
+.admin_body{
+    background-image: url(images/background02.jpg);
+}
+.user_body{
+    background-color: rgb(196, 145, 145);
+}
+.none_body{
+    background-color: rgb(24, 90, 73);
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.664);
+    backdrop-filter: blur(3px);
+    height: 10vw;
+    max-height: 100px;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.24);
+    overflow: visible;
+}
+header nav img{
+    width: 20vw;
+    max-width: 150px;
+    height: 4vw;
+    max-height: 30px;
+    margin-left: 2rem;
+}
+header nav section {
+    display: flex;
+    align-items: center;
+}
+header nav section h3{
+    margin-right: 0.90rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.admin_icon_login{
+    background-color: rgb(235, 235, 235);
+    width: 8vw;
+    height: 8vw;
+    max-width: 50px;
+    max-height: 50px;
+    color: rgb(54, 54, 54);
+    border-style: solid 2px rgb(184, 184, 184);
+    border-radius: 4vw;
+    box-shadow: 0.3px 0.3px 5px 1px rgba(0, 0, 0, 0.199);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: .625rem;
+}
+.user_icon_login{
+    background-color: rgb(126, 94, 94);
+    width: 8vw;
+    height: 8vw;
+    
+    color: rgb(255, 255, 255);
+    border-radius: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.none_body{
+    display: none;
+}
+.menu_nav_header{
+    position: relative;
+}
+header nav section i{
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    
+}
+#target_nav_header{
+    display: none;
+}
+
+#target_nav_header:target { 
+    display: block;
+    background-color: rgba(255, 255, 255, 0.801);
+    list-style-type: none;
+    position: absolute;
+    text-align: right;
+    left: -110px;
+    top:20px;
+    text-decoration: none;
+    padding:10px;
+    border-radius: 6px;
+}
+.span_line{
+    border-bottom: solid 0.3px rgb(87, 87, 87);
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+header nav ul li a{
+    text-decoration: solid;
+    font-weight: bolder;
+    color: black; 
+    text-align: right;
+}

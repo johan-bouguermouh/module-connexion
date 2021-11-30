@@ -1,0 +1,474 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Lato', serif;
+    color: rgb(54, 54, 54);
+}
+.admin_body{
+    background-image: url(images/background02.jpg);
+}
+.user_body{
+    background-color: rgb(196, 145, 145);
+}
+.none_body{
+    background: linear-gradient(#ffffff,#b0d9c8) ;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.664);
+    backdrop-filter: blur(3px);
+    height: 10vw;
+    max-height: 100px;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.24);
+    overflow: visible;
+}
+.admin_body header nav{
+    background-color: #212b53;
+    color: #ffffff;
+}
+header nav img{
+    width: 20vw;
+    max-width: 150px;
+    height: 4vw;
+    max-height: 30px;
+    margin-left: 2rem;
+}
+header nav section {
+    display: flex;
+    align-items: center;
+}
+header nav section h3{
+    margin-right: 0.90rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.admin_icon_login{
+    background-color: rgb(235, 235, 235);
+    width: 8vw;
+    height: 8vw;
+    max-width: 50px;
+    max-height: 50px;
+    color: rgb(54, 54, 54);
+    border-style: solid 2px rgb(184, 184, 184);
+    border-radius: 4vw;
+    box-shadow: 0.3px 0.3px 5px 1px rgba(0, 0, 0, 0.199);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: .625rem;
+}
+.user_icon_login{
+    background-color: rgb(235, 235, 235);
+    width: 8vw;
+    height: 8vw;
+    max-width: 50px;
+    max-height: 50px;
+    color: rgb(54, 54, 54);
+    border-style: solid 2px rgb(184, 184, 184);
+    border-radius: 4vw;
+    box-shadow: 0.3px 0.3px 5px 1px rgba(0, 0, 0, 0.199);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: .625rem;
+}
+
+
+.menu_nav_header{
+    position: relative;
+    display: flex;
+}
+header nav section i{
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    color: #01898c;
+    
+}
+#target_nav_header{
+    display: none;
+}
+
+#target_nav_header:target { 
+    display: block;
+    background-color: rgba(255, 255, 255, 0.801);
+    list-style-type: none;
+    position: absolute;
+    text-align: right;
+    left: -110px;
+    top:20px;
+    text-decoration: none;
+    padding:10px;
+    border-radius: 6px;
+}
+.span_line{
+    border-bottom: solid 0.3px rgb(87, 87, 87);
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+header nav ul li a{
+    text-decoration: solid;
+    font-weight: bolder;
+    color: black; 
+    text-align: right;
+}
+.header_nav_section_bouton{
+    width: 33%;
+    display: flex;
+    justify-content: end;
+}
+.header_nav_bouton{
+    
+    background-color: rgba(255, 255, 255, 0.664);
+    backdrop-filter: blur(3px);
+    text-decoration: none;
+    width: 9.375rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .625rem;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.10);
+    
+}
+.header_nav_bouton:hover{
+    background-color: #01898c;
+}
+.header_nav_bouton a{
+text-decoration: none;
+color: #474747;
+}
+.header_nav_bouton:hover a{
+    color: #ffffff;
+}
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.664);
+    backdrop-filter: blur(3px);
+    height: 10vw;
+    max-height: 100px;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.24);
+    overflow: visible;
+
+}
+.admin_body footer section{
+    background-color: #212b53;
+    
+}
+footer section a{
+    margin: .9375rem;
+    text-decoration: none;
+    color: #474747;
+}
+.admin_body footer section a{
+    color: white;
+}
+footer section a:hover{
+    text-decoration: underline;
+}
+
+h2{
+    text-align: center;
+
+}
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/** MODULE D'INSCRIPTION**/
+.test_mdc{
+    width: 70%;
+    max-width: 500px;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+}
+.test_mdc h2{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.inscription_form p{
+    width: 100%;
+    text-align: center;
+    margin-block-start: 0em;
+    color : #f7a605;
+}
+.div_design_mdc{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 70%;
+    
+}
+#mdc_top{
+    max-width: 620px;
+    width: 123%;
+    position: absolute;
+
+}
+#mdc_bottom{
+    position: absolute;
+    max-width: 620px;
+    width: 123%;
+}
+
+.inscription_form{
+    width: 70%;
+}
+.inscription_bottom_formulaire{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: baseline;
+}
+input{
+    backdrop-filter: blur(3px);
+    margin: 5px;
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    border : solid 0.3px rgb(155, 155, 155);
+}
+.error_user_login{
+    border: solid 2px #f7a605;
+    
+}
+.error_code_mdp{
+    border: solid 2px #f7a605;
+}
+#input_important{
+    background-color: #f7a605 ;
+    border: none;
+    border-radius: 8px;
+    width: 6.25rem;
+    align-self: center;
+    z-index: 1;
+}
+/** MODULE CONNEXION**/
+.test_mdc_connect{
+    width: 70%;
+    max-width: 500px;
+    height: 340px;
+    background-color: rgba(255, 255, 255, 0.616);
+    backdrop-filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 9px 9px;
+    box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.096);
+    padding-bottom: 1.875rem;
+}
+.test_mdc_connect form{
+    width: 80%;
+}
+.test_mdc_connect input{
+    width: 100%;
+    margin-bottom: .9375rem;
+}
+.test_mdc_connect label{
+    font-weight: bold;
+    color: #212b53;
+    text-transform: uppercase;
+    text-align: center;
+}
+.test_mdc_connect h3{
+    color: #212b53;
+    text-align: center;
+    justify-self: normal;
+
+}
+#mdc_top_connect{
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    align-self: flex-end;
+}
+#mdc_bottom_connect{
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+}
+.input_connect{
+    background-color: #212b53;
+    color: #ffffff;
+    width: 40% !important;
+    margin-right: 33%;
+    margin-left: 33%;
+    z-index: 1;
+}
+.input_connect:hover{
+    background-color: #01898c;
+}
+/** FORM TABLEAU **/
+.main_profil table{
+
+    background-color: white;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 5px 0px 30px 1px rgba(0, 0, 0, 0.308);
+}
+.info_update{
+    background-color: rgb(255, 255, 255);
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 5px 0px 30px 1px rgba(0, 0, 0, 0.308);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.875rem;
+    opacity: 1;
+    animation: disparition 1s ease-in 3s  forwards;
+}
+@keyframes disparition {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.info_update img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.25rem;
+}
+.info_update p{
+    color :#01898c;
+}
+
+/** POP-UP POUR MDP**/
+#popup_password{
+    position: absolute;
+    z-index: 99;
+    backdrop-filter: blur(7px);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.popup_password_content{
+    padding: 1.875rem;
+    background-color: #ffffff;
+    box-shadow: 5px 0px 30px 1px rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+}
+#input_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#input_bottom a{
+    background-color: #b3b3b3;
+    color: #535353;
+    width: 40% !important;
+    height: 1.9rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#input_bottom input{
+    background-color: #212b53;
+    color: #ffffff;
+    width: 40% !important;
+}
+#input_bottom input:hover{
+    background-color: #01898c;
+}
+/** TABLEAU GESTIONNAIRE*/
+.main_gestionnaire section{
+
+    background-color: rgba(255, 255, 255, 0.568);
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 5px 0px 30px 1px rgba(0, 0, 0, 0.308);
+    max-width: 800px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_gestionnaire table{
+    width: 100%;
+    margin: .7rem .7rem 0rem .7rem;
+    background-color: #ffffff48;
+    backdrop-filter: blur(3px);
+    padding: .9375rem;
+    box-shadow: 3px 0px 15px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+.main_gestionnaire thead{
+    width: 100%;
+}
+.main_gestionnaire thead tr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_gestionnaire tbody{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main_gestionnaire button{
+    background-color: #212b53;
+    color: #ffffff;
+    border: none;
+    padding: .3125rem;
+    border-radius: 5px;
+}
+.main_gestionnaire button:hover{
+    background-color: #01898c;
+    cursor: pointer;
+}
+
+
+/** VIDEO BAVKGROUND**/
+#video_background_connect{
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.lateral_cesure_footer{
+    width: 0.5px;
+    height: 2rem;
+    background-color: #545454;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

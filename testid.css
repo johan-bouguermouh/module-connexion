@@ -1,0 +1,14 @@
+.admin_icon_login{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 250%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
